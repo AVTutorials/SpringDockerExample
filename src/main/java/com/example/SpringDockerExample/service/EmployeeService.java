@@ -23,5 +23,10 @@ public class EmployeeService {
 	        List<Employee> allEmployee = employeeRepository.findAll();
 			return allEmployee;
 	    }
-
+ 
+	  public List<Employee> getAllDetails() {
+	        List<Employee> allEmployee = employeeRepository.findAll();
+			return allEmployee;
+	    }
+	  
 }
