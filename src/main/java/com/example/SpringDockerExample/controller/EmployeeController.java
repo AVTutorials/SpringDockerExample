@@ -46,6 +46,13 @@ public class EmployeeController {
 		
 	}
 	
+	@GetMapping(value = "/AllEmpDetails")
+	public List<Employee> getAllEmpDetails() {
+		System.out.println( employeeService.getAllEmpDetails());
+		return employeeService.getAllEmpDetails();
+		
+	}
+	
 	 @PostMapping(value="/uploadFile")
     public String uploadFile(@RequestParam("file") MultipartFile file) {
         try {
